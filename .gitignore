@@ -1,0 +1,12 @@
+build/
+build_desktop/
+web/
+external/
+.gradle/
+.idea/
+app/build/
+app/.cxx/
+android/app/build/
+android/app/.cxx/
+android/.gradle/
+android/.idea/
