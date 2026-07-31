@@ -31,10 +31,13 @@ fi
 
 # --- GLFW backend (default) -------------------------------------------------
 emcc -std=c++17 \
-    Scene3D/main.cpp \
-    Scene3D/Renderer.cpp \
-    Scene3D/Fan.cpp \
-    Scene3D/Transform.cpp \
+    Scene/main.cpp \
+    Scene/Renderer.cpp \
+    Scene/Fan.cpp \
+    Scene/Transform.cpp \
+    Scene/SceneHUD.cpp \
+    Scene/Scene3D.cpp \
+    Scene/Ground.cpp \
     -IScene \
     -Ithird_party/glm \
     -DUSE_GLFW \
