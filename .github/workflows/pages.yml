@@ -32,11 +32,11 @@ jobs:
       - name: Create site directory
         run: mkdir -p site
 
-      - name: Build Assignment-2-3DFan
+      - name: Build Assignment-3-3DFan-PhongShading
         run: |
           bash build_web.sh
-          mkdir -p site/Assignment-2-3DFan
-          cp -r web/. site/Assignment-2-3DFan/
+          mkdir -p site/Assignment-3-3DFan-PhongShading
+          cp -r web/. site/Assignment-3-3DFan-PhongShading/
 
       - name: Generate index.html
         run: |
@@ -51,9 +51,9 @@ jobs:
             <h1>OpenGL ES 3.0 Modern</h1>
             <p>An interactive WebGL demo that runs directly in your browser. No installation needed.</p>
 
-            <h2>Assignment 2 — 3D Fan</h2>
+            <h2>Assignment 3DFan PhongShading</h2>
             <p>Interactive 3D Fan with touch and swipe controls.</p>
-            <p><a href="Assignment-2-3DFan/">Launch 3D Fan</a></p>
+            <p><a href="Assignment-3-3DFan-PhongShading/">Launch 3D Fan</a></p>
           </body>
           </html>
           HTML
