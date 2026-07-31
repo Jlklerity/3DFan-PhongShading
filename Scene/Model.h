@@ -15,6 +15,6 @@ public:
 
     virtual void InitModel()          = 0;
     virtual void Render()             = 0;
-    virtual void Resize(int w, int h) {}
+    virtual void Resize(int w, int h) = 0;
 
 };

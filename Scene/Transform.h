@@ -192,7 +192,6 @@ public:
 
     // ---- View helpers -----------------------------------------------------
     void TransformLookAt( glm::vec3 *eye, glm::vec3 *center, glm::vec3 *up );
-    void TransformSetView( glm::mat4 mat );
 
     // ---- Projection / Unprojection ----------------------------------------
     int TransformProject( float objx, float objy, float objz,

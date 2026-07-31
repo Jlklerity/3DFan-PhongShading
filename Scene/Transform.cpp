@@ -66,7 +66,7 @@ void Transform::TransformError( void )
 
 void Transform::TransformSetMatrixMode( unsigned int mode )
 {
-    TransformMemData.matrix_mode = mode;
+    TransformMemData.matrix_mode = static_cast<unsigned char>(mode);
 }
 
 void Transform::TransformLoadIdentity( void )
@@ -309,7 +309,7 @@ void Transform::TransformOrthoGrahpic( float screen_ratio, float scale,
 
 void Transform::TransformSetPerspective( float fovy, float aspect_ratio,
                                           float clip_start, float clip_end,
-                                          float screen_orientation )
+                                          [[maybe_unused]] float screen_orientation )
 {
     switch ( TransformMemData.matrix_mode )
     {
@@ -322,11 +322,6 @@ void Transform::TransformSetPerspective( float fovy, float aspect_ratio,
         case TEXTURE_MATRIX:
             *TransformGetTextureMatrix() = glm::perspective(fovy,aspect_ratio,clip_start,clip_end); break;
     }
-}
-
-void Transform::TransformSetView( glm::mat4 mat )
-{
-    // Reserved for future use.
 }
 
 void Transform::TransformLookAt( glm::vec3 *eye, glm::vec3 *center, glm::vec3 *up )
