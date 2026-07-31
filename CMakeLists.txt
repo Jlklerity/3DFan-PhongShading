@@ -1,5 +1,5 @@
 # ===========================================================================
-# CMakeLists.txt – Desktop (Windows) build for Assignment 2 – 3D Fan
+# CMakeLists.txt – Desktop (Windows) build for Assignment 3 – 3D Fan Phong Shading
 #
 # Shared C++ source is in Scene/. The same Scene/ code is used by:
 #   - This file          → native desktop executable (GLFW + GLEW)

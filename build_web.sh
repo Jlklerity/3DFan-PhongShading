@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # =============================================================================
-# build_web.sh – Build Assignment 2 – 3D Fan for WebGL using Emscripten
+# build_web.sh – Build Assignment 3 – 3DFan Phong Shading for WebGL using Emscripten
 #
 # Prerequisites:
 #   1. Install the Emscripten SDK:  https://emscripten.org/docs/getting_started/
