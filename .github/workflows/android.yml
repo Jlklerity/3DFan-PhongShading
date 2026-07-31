@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { project: ., name: Assignment-2-3DFan } 
+          - { project: ., name: Assignment-3-3DFan-PhongShading } 
 
     steps:
       - uses: actions/checkout@v4
